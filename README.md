@@ -1,10 +1,10 @@
-# Google User Creation with Tkinter Interface
+# Google User Creation with PySide6 Interface
 
 ## Description
-This program facilitates the automatic creation of Google Workspace users through a user-friendly **Tkinter** graphical interface. It generates an email in the format `firstletteroffirstname.lastname@mydomain.com`, assigns a Google Workspace license, and enforces a password change on the user's first login. Additionally, it supports bulk user creation by importing user details from a CSV file.
+This program facilitates the automatic creation of Google Workspace users through a user-friendly **PySide6** graphical interface. It generates an email in the format `firstletteroffirstname.lastname@mydomain.com`, assigns a Google Workspace license, and enforces a password change on the user's first login. Additionally, it supports bulk user creation by importing user details from a CSV file.
 
 ## Features
-- **User-friendly interface** built with **Tkinter & TTK**.
+- **User-friendly interface** built with **PySide6**.
 - **Creation of Google Workspace users** via the **Admin SDK**.
 - **Automatic assignment** of a **Google Workspace license**.
 - Enforces **password change** on first login.
@@ -53,7 +53,7 @@ google-auth==2.22.0
 google-auth-oauthlib==1.0.0
 google-auth-httplib2==0.1.0
 google-api-python-client==2.97.0
-tkinter
+PySide6
 ```
 
 ## Usage
@@ -69,7 +69,7 @@ tkinter
 ## Common Issues
 ### ❌ **Error `TclError: Can't find a usable init.tcl`**
 - Solution: Reinstall **Python with Tcl/Tk included**.
-- Test: Run `python -m tkinter` to verify the installation.
+- Test: Run `python -m PySide6` to verify the installation.
 
 ### ❌ **Error `403 Forbidden` when creating a user**
 - Ensure the service account has administrative permissions.
